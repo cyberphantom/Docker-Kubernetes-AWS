@@ -1,6 +1,6 @@
 # Kubernetes-Docker
 
-Introduction
+## Introduction:
 
 * Docker			Containarization platform
 * Kubernetes		Container cluster manager (Docker and rkt containers)
