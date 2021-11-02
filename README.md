@@ -8,4 +8,4 @@
 
 ## Definitions:
 
-**Kubernetes:** is a software for managing a cluster of Docker continers (Scheduling, scaling, distribution workload). Kubernetes takes the software encapsulation provided by Docker further by introducing Pods.
+**Kubernetes:** is a software for managing a cluster of Docker continers (scheduling, scaling, distribution workload). Kubernetes takes the software encapsulation provided by Docker further by introducing Pods.
