@@ -12,7 +12,7 @@
 
 **Pod:** a Pod is a collection of one or more Docker containers with single interface features such as providing networking and filesystem at the Pod level rather than at the container level.
 
-## To install Docker on an Amazon EC2 instance
+## To install Docker on an Amazon EC2 instance [AWS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html).
 
 1. Launch an instance with the Amazon Linux 2 or Amazon Linux AMI.
 2. Connect to your instance.
