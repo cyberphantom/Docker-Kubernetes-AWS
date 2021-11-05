@@ -25,3 +25,6 @@
 7. Log out and log back in again to pick up the new `docker` group permissions. You can accomplish this by closing your current SSH terminal window and reconnecting to your instance in a new one. Your new SSH session will have the appropriate `docker` group permissions. 
 8. Verify that the `ec2-user` can run Docker commands without `sudo`. `docker info`
 
+## Push your image to Amazon Elastic Container Registry
+
+1. Create an Amazon ECR repository to store your image. `aws ecr create-repository --repository-name hello-repository --region region`
