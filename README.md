@@ -30,6 +30,9 @@
 1. Prepare or create your docker image and test it in your local machine or the connected instance.
 2. To use Amazon ECR, first install AWS [CLI](https://docs.aws.amazon.com/AmazonECR/latest/userguide/get-set-up-for-amazon-ecr.html).
 3. Create youe IAM user Administrator.
-4. [aws configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html).
+4. [aws configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html). You can create a named profile using `aws configure --profile produser`
 5. [Authenticate the Docker CLI to your default registry](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html) in Step 2.
-6. Create an Amazon ECR repository to store your image. `aws ecr create-repository --repository-name hello-repository --region region`
+6. get-login-password `aws ecr get-login-password --region region | docker login --username AWS --password-stdin aws_account_id.dkr.ecr.region.amazonaws.com`. The password will be stored unencrypted in /home/ec2-user/.docker/config.json.
+7. Create an Amazon ECR repository to store your image. `aws ecr create-repository --repository-name hello-repository --region region`.
+8. Tag your image to push to your repository. `docker tag hello-world:latest aws_account_id.dkr.ecr.region.amazonaws.com/hello-world:latest`.
+9. Push the images `docker push aws_account_id.dkr.ecr.region.amazonaws.com/hello-world:latest` [step4](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html).
