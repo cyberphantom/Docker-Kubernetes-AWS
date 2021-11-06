@@ -28,5 +28,5 @@
 ## Push your image to Amazon Elastic Container Registry (ECR)
 
 1. Prepare or create your docker image and test it in your local machine or the connected instance.
-2. To use Amazon ECR, first install AWS [CLI](https://docs.aws.amazon.com/AmazonECR/latest/userguide/get-set-up-for-amazon-ecr.html)
+2. To use Amazon ECR, first install AWS [CLI](https://docs.aws.amazon.com/AmazonECR/latest/userguide/get-set-up-for-amazon-ecr.html).
 3. Create an Amazon ECR repository to store your image. `aws ecr create-repository --repository-name hello-repository --region region`
