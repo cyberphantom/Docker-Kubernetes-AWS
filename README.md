@@ -36,3 +36,4 @@
 7. Create an Amazon ECR repository to store your image. `aws ecr create-repository --repository-name hello-repository --region region`.
 8. Tag your image to push to your repository. `docker tag hello-world:latest aws_account_id.dkr.ecr.region.amazonaws.com/hello-world:latest`.
 9. Push the images `docker push aws_account_id.dkr.ecr.region.amazonaws.com/hello-world:latest` [step4](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html).
+10. To avoid charge, clean up your repository. `aws ecr delete-repository --repository-name hello-repository --region region --force`
