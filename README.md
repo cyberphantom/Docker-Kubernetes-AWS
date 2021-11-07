@@ -5,7 +5,7 @@
 * Docker:			Containarization platform.
 * Kubernetes:		Container cluster manager (Docker and rkt containers).
 * CoreOS:			OS for containers.
-* Amazon EC2:     Instance hosting Ubuntu as the operating system. Check version architecture: `uname -r`
+* Amazon EC2:     Instance hosting Ubuntu as the operating system. Check version architecture: `uname -r`. You can use SSH to connect to Ubuntu instance on Amazon EC2 `ssh -i "docker.pem" ubuntu@52.91.80.173`.
 
 ## Definitions:
 
