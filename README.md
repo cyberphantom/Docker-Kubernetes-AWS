@@ -5,7 +5,7 @@
 * Docker:			Containarization platform.
 * Kubernetes:		Container cluster manager (Docker and rkt containers).
 * CoreOS:			OS for containers.
-* Amazon EC2:     Instance hosting Ubuntu as the operating system
+* Amazon EC2:     Instance hosting Ubuntu as the operating system. Check version architecture: `uname -r`
 
 ## Definitions:
 
