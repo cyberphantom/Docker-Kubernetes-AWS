@@ -13,6 +13,7 @@
 
 * **Pod:** a Pod is a collection of one or more Docker containers with single interface features such as providing networking and filesystem at the Pod level rather than at the container level.
 * **Amazon Relational Database Service (RDS):** Is a distributed relational database service by Amazon Web Services. It is a web service running "in the cloud" designed to simplify the setup, operation, and scalling of a relational database for use in applications.
+* **Amazon S3:** Amazon simple storage service offered by Amazon web services that prvides object storage through a web service interface. 
 
 ## To install Docker on an Amazon EC2 instance [AWS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html).
 
