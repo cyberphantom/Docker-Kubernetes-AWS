@@ -6,6 +6,7 @@
 * Kubernetes:		Container cluster manager (Docker and rkt containers).
 * CoreOS:			OS for containers.
 * Amazon EC2:     Instance hosting Ubuntu as the operating system. Check version architecture: `uname -r`. You can use SSH to connect to Ubuntu instance on Amazon EC2 `ssh -i "docker.pem" ubuntu@52.91.80.173`.
+* Virtual Private Cloud (VPC): Is your private section of AWS, where you can place resources and allow or restrict access to them.
 
 ## Definitions:
 
