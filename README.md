@@ -14,6 +14,19 @@
 * **Amazon Relational Database Service (RDS):** Is a distributed relational database service by Amazon Web Services. It is a web service running "in the cloud" designed to simplify the setup, operation, and scalling of a relational database for use in applications.
 * **Amazon S3:** Amazon simple storage service offered by Amazon web services that prvides object storage through a web service interface. 
 
+
+## Introduction:
+**Docker:**
+
+* Docker Build: `docker build --tag hello-world .`
+* Docker main commands: `FROM WORKDIR ENV COPY RUN CMD["exe","file"]`
+* List docker images: `docker images`
+* Check running docker images: `docker ps`
+* Check all previously run dockers: `docker ps -a`
+* Docker run: `docker run hello-world`
+
+
+
 ## To install Docker on an Amazon EC2 instance [AWS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html).
 
 1. Launch an instance with the Amazon Linux 2 or Amazon Linux AMI.
