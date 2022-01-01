@@ -1,4 +1,4 @@
-# Kubernetes-Docker-AWS (For Beginers)
+# Kubernetes-Docker-AWS (For Beginners)
 
 ## Definitions:
 
