@@ -23,7 +23,8 @@
 * List docker images: `docker images`
 * Check running docker images: `docker ps`
 * Check all previously run dockers: `docker ps -a`
-* Docker run: `docker run hello-world`
+* Docker start: `docker start $name`
+* Docker stop: `docker stop $name`
 
 
 
