@@ -19,7 +19,7 @@
 **Docker:**
 
 * Docker Build: `docker build --tag hello-world .`
-* Docker main commands: `FROM WORKDIR ENV COPY RUN CMD["exe","file"]`
+* Docker main commands: `FROM WORKDIR ENV COPY RUN CMD["exe cmd","file"]`
 * List docker images: `docker images`
 * Check running docker images: `docker ps`
 * Check all previously run dockers: `docker ps -a`
