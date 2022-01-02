@@ -1,6 +1,9 @@
 # Docker-Kubernetes-AWS (For Beginners)
+Now adays, most development companies are putting these three kind of tools as a must. Therefore, I will try to cover in short the most useful and basic commands in each of Docker, Kubernetes, and AWS EC2. It will act as an introductory and reference for begineeres or students who looking forward to learn these basic instructions with minimal time.
 
-## Definitions:
+
+
+## Some Definitions:
 
 
 * **Docker:**			Containarization platform.
@@ -15,18 +18,7 @@
 * **Amazon S3:** Amazon simple storage service offered by Amazon web services that prvides object storage through a web service interface. 
 
 
-## Introduction:
-**Docker:**
-
-* Docker Build: `docker build --tag hello-world .`
-* Docker main commands: `FROM WORKDIR ENV COPY RUN CMD["exe cmd","file"]`
-* List docker images: `docker images`
-* Check running docker images: `docker ps`
-* Check all previously run dockers: `docker ps -a`
-* Docker start: `docker start $name`
-* Docker stop: `docker stop $name`
-* Docker remove: `docker rm $name`
-* Docker run (8080 machine port, 80 container port, name, -d detached for long term run like webserver, name of the image): `docker run -p 8080:80 --name $name -d hello-world`
+## [Docker Quick Start](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html):
 
 
 
