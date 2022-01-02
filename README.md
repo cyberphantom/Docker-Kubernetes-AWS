@@ -47,8 +47,38 @@ Now adays, most development companies are putting these three kind of tools as a
 * Docker run (8080 machine port, 80 container port, name, -d detached for long term run like webserver, name of the image): `docker run -p 8080:80 --name $name -d hello-world`
 * Docker logs (-f to continuously following logs): `docker logs -f $name`
 
-**docker-compose.yaml**
+**docker-compose.yml (version volumes services)**
 It is better to use docker-compose when working with micro services as starting and stoping each service will be hard to manage.
+
+*Ex:*
+`docker-compose.yml`
+
+      version: '3'
+      services:
+         web:
+            build:
+               context:
+               dockerfile: Dockerfile
+            container_name: web
+            ports:
+               - "8080:80"
+
+         db:
+            image: mongo:3.6.1
+            container_name: db
+            volumes:
+               - mongodb:/data/db
+               - mongodb_config:/data/configdb
+            ports:
+               - 27017:27017
+            command: mongod
+
+      volumes:
+         mongodb:
+         mongodb_config:
+
+
+
 
 * docker-compose run: `docker-compose up -d`
 * docker-compose stop: `docker-compose down`
