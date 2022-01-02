@@ -34,7 +34,8 @@ Now adays, most development companies are putting these three kind of tools as a
       CMD ["node", "src/server.js"]    `run the server with command`
 
 * Docker Build (Build an image from Dockerfile. name it whatever after --tag with the file located in . which is current directory): `docker build --tag hello-world .`
-* Docker run Image: `docker run -d -p 80:80 docker/getting-started`
+* Docker run Image: `docker run -p 8080:80 --name hello -d hello-world` another example
+`docker run -d -p 80:80 docker/getting-started`
 * Docker main commands: `FROM WORKDIR ENV COPY RUN CMD["exe cmd","file"]`
 * List docker images: `docker images`
 * Check running docker images: `docker ps`
@@ -44,7 +45,7 @@ Now adays, most development companies are putting these three kind of tools as a
 * Docker remove: `docker rm $name`
 * Docker Image remove (we need to remove image before removing container): `docker rmi $image_name`
 * Docker run (8080 machine port, 80 container port, name, -d detached for long term run like webserver, name of the image): `docker run -p 8080:80 --name $name -d hello-world`
-* Docker log (-f to continuously following logs): `docker log -f $name`
+* Docker logs (-f to continuously following logs): `docker logs -f $name`
 
 **docker-compose.yaml**
 It is better to use docker-compose when working with micro services as starting and stoping each service will be hard to manage.
