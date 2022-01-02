@@ -20,9 +20,21 @@ Now adays, most development companies are putting these three kind of tools as a
 
 ## [Docker Quick Start](https://github.com/cyberphantom/Docker-Kubernetes-AWS/blob/main/docker.md)
 
-**Dockerfile:**
+**Dockerfile: FROM WORDIR ENV COPY RUN CMD**
 
-* Docker Build: `docker build --tag hello-world .`
+*Ex:*
+`Dockerfile`
+
+      FROM node:12.16.3 `must start with FROM`
+      WORKDIR /code     `Specify working Dir`
+      ENV PORT 80       `In ENV, specify port of the container`
+      COPY package.json /code/package.json   `Copy dependencies before installing`
+      RUN npm install   `RUN then exe LINUX command to install npm`
+      COPY . /code      `Copy all files to the container image. Except what is mentioned in .gitignore file`
+      CMD ["node", "src/server.js"]    `run the server with command`
+
+* Docker Build (Build an image from Dockerfile. name it whatever after --tag with the file located in . which is current directory): `docker build --tag hello-world .`
+* Docker run Image: `docker run -d -p 80:80 docker/getting-started`
 * Docker main commands: `FROM WORKDIR ENV COPY RUN CMD["exe cmd","file"]`
 * List docker images: `docker images`
 * Check running docker images: `docker ps`
