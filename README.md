@@ -18,7 +18,7 @@ Now adays, most development companies are putting these three kind of tools as a
 * **Amazon S3:** Amazon simple storage service offered by Amazon web services that prvides object storage through a web service interface. 
 
 
-## [Docker Quick Start](https://github.com/cyberphantom/Docker-Kubernetes-AWS/blob/main/docker.md):
+## [Docker Quick Start](https://github.com/cyberphantom/Docker-Kubernetes-AWS/blob/main/docker.md)
 
 
 
