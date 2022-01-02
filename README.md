@@ -7,6 +7,7 @@ Now adays, most development companies are putting these three kind of tools as a
 
 
 * **Docker:**			Containarization platform.
+* **Container:**     is a sandbox process on your machine that is isolated from all other processes on the host machine. It is a runable instance of an image.
 * **CoreOS:**			OS for containers.
 * **Amazon EC2:**     A web server instance hosting Ubuntu as the operating system. Check version architecture: `uname -r`. You can use SSH to connect to Ubuntu instance on Amazon EC2 `ssh -i "youe docker.pem" ubuntu@ip address`.
 * **Virtual Private Cloud (VPC):** Is your private section of AWS, where you can place resources and allow or restrict access to them.
