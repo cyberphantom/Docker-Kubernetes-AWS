@@ -7,7 +7,9 @@ Now adays, most development companies are putting these three kind of tools as a
 
 
 * **Docker:**			Containarization platform.
-* **Container:**     is a sandbox process on your machine that is isolated from all other processes on the host machine. It is a runable instance of an image.
+* **Container:**     is a sandbox process on your machine that is isolated from all other processes on the host machine. It is a runable instance of an image. In general, each container should do one thing and do it well.
+* **Networking:**   allow one container to talk to another. 
+* **Docker Compose:** is a tool that was developed to help define and share multi-container applications.
 * **CoreOS:**			OS for containers.
 * **Amazon EC2:**     A web server instance hosting Ubuntu as the operating system. Check version architecture: `uname -r`. You can use SSH to connect to Ubuntu instance on Amazon EC2 `ssh -i "youe docker.pem" ubuntu@ip address`.
 * **Virtual Private Cloud (VPC):** Is your private section of AWS, where you can place resources and allow or restrict access to them.
@@ -41,9 +43,9 @@ Now adays, most development companies are putting these three kind of tools as a
 * List docker images: `docker images`
 * Check running docker images: `docker ps`
 * Check all previously run dockers: `docker ps -a`
-* Docker start (name is container name not image name): `docker start $name`
-* Docker stop: `docker stop $name`
-* Docker remove: `docker rm $name`
+* Docker start a container (name is container name not image name): `docker start $name`
+* Docker stop a container: `docker stop $name`
+* Docker remove a container: `docker rm $name`
 * Docker Image remove (we need to remove image before removing container): `docker rmi $image_name`
 * Docker run (8080 machine port, 80 container port, name, -d detached for long term run like webserver, name of the image): `docker run -p 8080:80 --name $name -d hello-world`
 * Docker logs (-f to continuously following logs): `docker logs -f $name`
